@@ -1,0 +1,152 @@
+
+===== accept-only: per-cell, corrected defection (bloc-instructed sides only) vs legacy =====
+cell                       n medRound    pos     sd defect_corr defect_legacy  class
+ch-none_neutral           18     11.0  0.281  0.197        0.61          0.61  war
+ch-private_neutral        12      6.0  0.249  0.128        0.50          0.50  shirking
+ch-private_neutral_cf     10      4.0  0.272  0.174        0.20          0.60  indeterminate
+ch-private_neutral_full   10     10.0  0.345  0.287        0.10          0.10  war
+ch-private_unregulated    10      4.0  0.314  0.162        0.20          0.20  indeterminate
+ch-public_neutral         12      8.0  0.316  0.208        0.33          0.33  indeterminate
+
+===== accept-only: Fisher's exact, episodes with >=1 defection, treatment vs counterfactual (corrected) =====
+cell                      treat def/n   cf def/n  odds ratio  p (2-tailed)   legacy p
+ch-none_neutral              11/18       2/10           6.29         0.055   1.000
+ch-public_neutral             4/12       2/10           2.00         0.646   0.391
+ch-private_neutral            6/12       2/10           4.00         0.204   0.691
+ch-private_neutral_full       1/10       2/10           0.44         1.000   0.057
+ch-private_unregulated        2/10       2/10           1.00         1.000   0.170
+
+===== accept-only: MATCHED denominator, sellers only in every cell =====
+cell                          def/n   rate           95% CI  odds ratio  p (2-tailed)
+ch-private_neutral_cf (baseline)    2/10      0.20 [0.00, 0.50]
+ch-none_neutral             5/18      0.28 [0.06, 0.50]        1.54         1.000
+ch-public_neutral           0/12      0.00 [0.00, 0.00]        0.00         0.195
+ch-private_neutral          1/12      0.08 [0.00, 0.25]        0.36         0.571
+ch-private_neutral_full     1/10      0.10 [0.00, 0.30]        0.44         1.000
+ch-private_unregulated      0/10      0.00 [0.00, 0.00]        0.00         0.474
+
+===== accept-only: minimum detectable effect, matched test (Fisher, alpha=0.05, power=0.80) =====
+baseline 0.20 at n=10; a true treatment rate must reach these to be detectable:
+  n=10  tighter than  unreachable   looser than         0.88
+  n=12  tighter than  unreachable   looser than         0.81
+  n=18  tighter than  unreachable   looser than         0.75
+
+===== accept-only: continuous partner gap, sellers only (EXPLORATORY - 4th specification) =====
+episodes with >=1 scored round: 63 of 72 (9 closed in round 1 and are excluded; the counterfactual loses 0, so the exclusion biases AGAINST tighter cohesion)
+cell                       n      q1  median      q3    mean  rank-bis       p  p Holm
+ch-private_neutral_cf (reference)  10  0.0027  0.0258  0.1126  0.1042
+ch-none_neutral           17  0.0000  0.0061  0.0201  0.0205     -0.33   0.164   0.327
+ch-public_neutral         12  0.0000  0.0065  0.0158  0.0079     -0.48   0.058   0.231
+ch-private_neutral        10  0.0017  0.0076  0.0142  0.0085     -0.46   0.088   0.263
+ch-private_neutral_full    8  0.0000  0.0003  0.0064  0.0028     -0.62   0.027   0.133
+ch-private_unregulated     6  0.0034  0.0057  0.0128  0.0079     -0.40   0.212   0.327
+
+  POOLED (primary): all treatment episodes vs counterfactual, one test, no multiplicity
+  treatment n=53 median=0.0055 mean=0.0113 | counterfactual n=10 median=0.0258 mean=0.1042
+  rank-biserial -0.44   Mann-Whitney p = 0.0269   (negative = bloc-instructed sellers diverge LESS)
+  EXPLORATORY. Fourth cohesion specification; chosen on the structural grounds above
+  from diagnostics that preceded this result, not because it returned a preferred answer.
+  Not confirmatory. A replication needs this measure pre-registered.
+
+===== accept-only: paired bootstrap, channel contrasts (10,000 draws, episodes resampled within cell) =====
+contrast                          measure    diff             95% CI  verdict
+none - public               mean position  -0.035 [-0.189, +0.112]  not separated
+none - public                median round  +3.000 [-1.000, +6.000]  not separated
+none - private              mean position  +0.032 [-0.085, +0.151]  not separated
+none - private               median round  +5.000 [+1.000, +7.000]  separated
+public - private            mean position  +0.067 [-0.068, +0.207]  not separated
+public - private             median round  +2.000 [-2.000, +5.500]  not separated
+
+===== accept-only: headline 2x2, corrected baseline vs legacy =====
+counterfactual defection baseline: legacy 0.60 (both sides, unmatched n) | corrected 0.20 (bloc sides, unmatched n) | matched 0.20 (sellers only, matched n)
+cell                     outcome                 legacy       ->    corr       ->  matched       ->       p
+ch-none_neutral          war                       0.61     same    0.61   looser     0.28     same   1.000
+ch-public_neutral        indeterminate             0.33  tighter    0.33   looser     0.00  tighter   0.195
+ch-private_neutral       shirking                  0.50     same    0.50   looser     0.08  tighter   0.571
+ch-private_neutral_full  war                       0.10  tighter    0.10     same     0.10     same   1.000
+ch-private_unregulated   indeterminate             0.20  tighter    0.20     same     0.00  tighter   0.474
+The matched column is the one to report: it is the only comparison with an
+identical denominator on both sides. Legacy and corrected are shown for provenance.
+
+===== seller-ask: per-cell, corrected defection (bloc-instructed sides only) vs legacy =====
+cell                       n medRound    pos     sd defect_corr defect_legacy  class
+ch-none_neutral           18      2.0  0.690  0.167        0.50          0.50  indeterminate
+ch-private_neutral        12      3.0  0.663  0.148        0.67          0.67  capture:buyers
+ch-private_neutral_cf     10      3.0  0.764  0.102        0.60          0.60  shirking
+ch-private_neutral_full   10      2.5  0.592  0.184        0.40          0.40  indeterminate
+ch-private_unregulated    10      4.0  0.666  0.169        0.70          0.70  indeterminate
+ch-public_neutral         12      3.0  0.705  0.237        0.83          0.83  indeterminate
+
+===== seller-ask: Fisher's exact, episodes with >=1 defection, treatment vs counterfactual (corrected) =====
+cell                      treat def/n   cf def/n  odds ratio  p (2-tailed)   legacy p
+ch-none_neutral               9/18       6/10           0.67         0.705   0.705
+ch-public_neutral            10/12       6/10           3.33         0.348   0.348
+ch-private_neutral            8/12       6/10           1.33         1.000   1.000
+ch-private_neutral_full       4/10       6/10           0.44         0.656   0.656
+ch-private_unregulated        7/10       6/10           1.56         1.000   1.000
+
+===== seller-ask: MATCHED denominator, sellers only in every cell =====
+cell                          def/n   rate           95% CI  odds ratio  p (2-tailed)
+ch-private_neutral_cf (baseline)    6/10      0.60 [0.30, 0.90]
+ch-none_neutral             7/18      0.39 [0.17, 0.61]        0.42         0.433
+ch-public_neutral           7/12      0.58 [0.33, 0.83]        0.93         1.000
+ch-private_neutral          7/12      0.58 [0.33, 0.83]        0.93         1.000
+ch-private_neutral_full     1/10      0.10 [0.00, 0.30]        0.07         0.057
+ch-private_unregulated      4/10      0.40 [0.10, 0.70]        0.44         0.656
+
+===== seller-ask: minimum detectable effect, matched test (Fisher, alpha=0.05, power=0.80) =====
+baseline 0.60 at n=10; a true treatment rate must reach these to be detectable:
+  n=10  tighter than         0.00   looser than  unreachable
+  n=12  tighter than         0.04   looser than  unreachable
+  n=18  tighter than         0.08   looser than         1.00
+
+===== seller-ask: continuous partner gap, sellers only (EXPLORATORY - 4th specification) =====
+episodes with >=1 scored round: 52 of 72 (20 closed in round 1 and are excluded; the counterfactual loses 4, so the exclusion biases AGAINST tighter cohesion)
+cell                       n      q1  median      q3    mean  rank-bis       p  p Holm
+ch-private_neutral_cf (reference)   6  0.1304  0.2570  0.3629  0.2534
+ch-none_neutral            9  0.0860  0.1113  0.1809  0.1326     -0.67   0.036   0.108
+ch-public_neutral         11  0.0313  0.1097  0.1431  0.1379     -0.55   0.078   0.156
+ch-private_neutral         9  0.0508  0.1531  0.2608  0.1625     -0.33   0.328   0.328
+ch-private_neutral_full    7  0.0048  0.0149  0.0439  0.0346     -0.90   0.005   0.019
+ch-private_unregulated    10  0.0296  0.0533  0.1050  0.0739     -0.87   0.003   0.015
+
+  POOLED (primary): all treatment episodes vs counterfactual, one test, no multiplicity
+  treatment n=46 median=0.0934 mean=0.1120 | counterfactual n=6 median=0.2570 mean=0.2534
+  rank-biserial -0.65   Mann-Whitney p = 0.0077   (negative = bloc-instructed sellers diverge LESS)
+  EXPLORATORY. Fourth cohesion specification; chosen on the structural grounds above
+  from diagnostics that preceded this result, not because it returned a preferred answer.
+  Not confirmatory. A replication needs this measure pre-registered.
+  CONFOUNDED IN THIS ARM: AgenticPay sellers quote each buyer separately, so the gap
+  mixes cross-buyer price discrimination with any break from a shared line. Direction only.
+
+===== seller-ask: paired bootstrap, channel contrasts (10,000 draws, episodes resampled within cell) =====
+contrast                          measure    diff             95% CI  verdict
+none - public               mean position  -0.015 [-0.165, +0.152]  not separated
+none - public                median round  -1.000 [-2.000, +0.000]  not separated
+none - private              mean position  +0.027 [-0.085, +0.140]  not separated
+none - private               median round  -1.000 [-2.000, +0.000]  not separated
+public - private            mean position  +0.042 [-0.122, +0.189]  not separated
+public - private             median round  +0.000 [-0.500, +1.000]  not separated
+
+===== seller-ask: headline 2x2, corrected baseline vs legacy =====
+counterfactual defection baseline: legacy 0.60 (both sides, unmatched n) | corrected 0.60 (bloc sides, unmatched n) | matched 0.60 (sellers only, matched n)
+cell                     outcome                 legacy       ->    corr       ->  matched       ->       p
+ch-none_neutral          indeterminate             0.50     same    0.50     same     0.39  tighter   0.433
+ch-public_neutral        indeterminate             0.83   looser    0.83   looser     0.58     same   1.000
+ch-private_neutral       capture:buyers            0.67     same    0.67     same     0.58     same   1.000
+ch-private_neutral_full  indeterminate             0.40  tighter    0.40  tighter     0.10  tighter   0.057
+ch-private_unregulated   indeterminate             0.70     same    0.70     same     0.40  tighter   0.656
+The matched column is the one to report: it is the only comparison with an
+identical denominator on both sides. Legacy and corrected are shown for provenance.
+
+===== Diff summary =====
+accept-only: counterfactual baseline legacy 0.60 -> corrected 0.20 -> matched 0.20
+  cohesion verdicts changed (legacy -> corrected): ch-none_neutral (same -> looser), ch-public_neutral (tighter -> looser), ch-private_neutral (same -> looser), ch-private_neutral_full (tighter -> same), ch-private_unregulated (tighter -> same)
+  cohesion verdicts changed (corrected -> matched): ch-none_neutral (looser -> same), ch-public_neutral (looser -> tighter), ch-private_neutral (looser -> tighter), ch-private_unregulated (same -> tighter)
+  matched test significant at p<=0.05: none
+  cell n: ch-none_neutral=18, ch-private_neutral=12, ch-private_neutral_cf=10, ch-private_neutral_full=10, ch-private_unregulated=10, ch-public_neutral=12
+seller-ask: counterfactual baseline legacy 0.60 -> corrected 0.60 -> matched 0.60
+  cohesion verdicts changed (legacy -> corrected): none
+  cohesion verdicts changed (corrected -> matched): ch-none_neutral (same -> tighter), ch-public_neutral (looser -> same), ch-private_unregulated (same -> tighter)
+  matched test significant at p<=0.05: none
+  cell n: ch-none_neutral=18, ch-private_neutral=12, ch-private_neutral_cf=10, ch-private_neutral_full=10, ch-private_unregulated=10, ch-public_neutral=12

@@ -1,0 +1,392 @@
+{
+ "accept-only": {
+  "ch-none_neutral": {
+   "n": 18,
+   "summary": {
+    "cell_name": "ch-none_neutral",
+    "n": 18,
+    "n_deals": 18,
+    "deal_share": 1.0,
+    "mean_round_closed": 10.833333333333334,
+    "median_round_closed": 11.0,
+    "mean_price_pos": 0.2808492948888344,
+    "price_sd": 0.1967804903927346,
+    "reference_pos": 0.2721949921962367,
+    "displacement": 0.008654302692597704,
+    "defection_rate": 0.6111111111111112,
+    "mean_principal_shortfall": -1.116222222222225,
+    "n_accidental": 0,
+    "classification": "war"
+   },
+   "ci_round": [
+    8.5,
+    12.5
+   ],
+   "ci_pos": [
+    0.1974117159417975,
+    0.37429308943510997
+   ],
+   "ci_defect": [
+    0.3888888888888889,
+    0.8333333333333334
+   ]
+  },
+  "ch-private_neutral": {
+   "n": 12,
+   "summary": {
+    "cell_name": "ch-private_neutral",
+    "n": 12,
+    "n_deals": 12,
+    "deal_share": 1.0,
+    "mean_round_closed": 7.0,
+    "median_round_closed": 6.0,
+    "mean_price_pos": 0.2490240927802374,
+    "price_sd": 0.1278699971089568,
+    "reference_pos": 0.2721949921962367,
+    "displacement": -0.023170899415999313,
+    "defection_rate": 0.5,
+    "mean_principal_shortfall": -1.9806666666666686,
+    "n_accidental": 0,
+    "classification": "shirking"
+   },
+   "ci_round": [
+    4.5,
+    9.0
+   ],
+   "ci_pos": [
+    0.1823148773883061,
+    0.3292666636265356
+   ],
+   "ci_defect": [
+    0.25,
+    0.75
+   ]
+  },
+  "ch-private_neutral_cf": {
+   "n": 10,
+   "summary": {
+    "cell_name": "ch-private_neutral_cf",
+    "n": 10,
+    "n_deals": 10,
+    "deal_share": 1.0,
+    "mean_round_closed": 5.1,
+    "median_round_closed": 4.0,
+    "mean_price_pos": 0.2721949921962367,
+    "price_sd": 0.17428426369028718,
+    "reference_pos": 0.2721949921962367,
+    "displacement": 0.0,
+    "defection_rate": 0.6,
+    "mean_principal_shortfall": -7.105427357601002e-16,
+    "n_accidental": 0,
+    "classification": "indeterminate"
+   },
+   "ci_round": [
+    3.0,
+    7.5
+   ],
+   "ci_pos": [
+    0.18533772178699187,
+    0.3911036191871492
+   ],
+   "ci_defect": [
+    0.3,
+    0.9
+   ]
+  },
+  "ch-private_neutral_full": {
+   "n": 10,
+   "summary": {
+    "cell_name": "ch-private_neutral_full",
+    "n": 10,
+    "n_deals": 9,
+    "deal_share": 0.9,
+    "mean_round_closed": 10.666666666666666,
+    "median_round_closed": 10,
+    "mean_price_pos": 0.34455834151578013,
+    "price_sd": 0.2866696119582097,
+    "reference_pos": 0.2721949921962367,
+    "displacement": 0.07236334931954341,
+    "defection_rate": 0.1,
+    "mean_principal_shortfall": -0.5501111111111143,
+    "n_accidental": 1,
+    "classification": "war"
+   },
+   "ci_round": [
+    4,
+    17
+   ],
+   "ci_pos": [
+    0.16987841790474004,
+    0.557317702221924
+   ],
+   "ci_defect": [
+    0.0,
+    0.3
+   ]
+  },
+  "ch-private_unregulated": {
+   "n": 10,
+   "summary": {
+    "cell_name": "ch-private_unregulated",
+    "n": 10,
+    "n_deals": 9,
+    "deal_share": 0.9,
+    "mean_round_closed": 4.666666666666667,
+    "median_round_closed": 4,
+    "mean_price_pos": 0.3137968635664004,
+    "price_sd": 0.16230895752269986,
+    "reference_pos": 0.2721949921962367,
+    "displacement": 0.04160187137016369,
+    "defection_rate": 0.2,
+    "mean_principal_shortfall": -1.143444444444444,
+    "n_accidental": 1,
+    "classification": "indeterminate"
+   },
+   "ci_round": [
+    1,
+    7
+   ],
+   "ci_pos": [
+    0.20551163992242527,
+    0.42079673771246734
+   ],
+   "ci_defect": [
+    0.0,
+    0.5
+   ]
+  },
+  "ch-public_neutral": {
+   "n": 12,
+   "summary": {
+    "cell_name": "ch-public_neutral",
+    "n": 12,
+    "n_deals": 12,
+    "deal_share": 1.0,
+    "mean_round_closed": 8.5,
+    "median_round_closed": 8.0,
+    "mean_price_pos": 0.3158076794986909,
+    "price_sd": 0.2079550769077805,
+    "reference_pos": 0.2721949921962367,
+    "displacement": 0.043612687302454156,
+    "defection_rate": 0.3333333333333333,
+    "mean_principal_shortfall": -2.3340000000000027,
+    "n_accidental": 0,
+    "classification": "indeterminate"
+   },
+   "ci_round": [
+    5.5,
+    10.5
+   ],
+   "ci_pos": [
+    0.20835335834991653,
+    0.43821168369674784
+   ],
+   "ci_defect": [
+    0.08333333333333333,
+    0.5833333333333334
+   ]
+  }
+ },
+ "seller-ask": {
+  "ch-none_neutral": {
+   "n": 18,
+   "summary": {
+    "cell_name": "ch-none_neutral",
+    "n": 18,
+    "n_deals": 18,
+    "deal_share": 1.0,
+    "mean_round_closed": 2.0555555555555554,
+    "median_round_closed": 2.0,
+    "mean_price_pos": 0.6900486982064719,
+    "price_sd": 0.16734165773985504,
+    "reference_pos": 0.7642013309083431,
+    "displacement": -0.07415263270187122,
+    "defection_rate": 0.5,
+    "mean_principal_shortfall": -0.5535555555555551,
+    "n_accidental": 0,
+    "classification": "indeterminate"
+   },
+   "ci_round": [
+    1.0,
+    3.0
+   ],
+   "ci_pos": [
+    0.6165960437576598,
+    0.7714415570476619
+   ],
+   "ci_defect": [
+    0.2777777777777778,
+    0.7222222222222222
+   ]
+  },
+  "ch-private_neutral": {
+   "n": 12,
+   "summary": {
+    "cell_name": "ch-private_neutral",
+    "n": 12,
+    "n_deals": 12,
+    "deal_share": 1.0,
+    "mean_round_closed": 2.8333333333333335,
+    "median_round_closed": 3.0,
+    "mean_price_pos": 0.6633034383071381,
+    "price_sd": 0.14766678798212404,
+    "reference_pos": 0.7642013309083431,
+    "displacement": -0.10089789260120496,
+    "defection_rate": 0.6666666666666666,
+    "mean_principal_shortfall": 0.5536666666666683,
+    "n_accidental": 0,
+    "classification": "capture:buyers"
+   },
+   "ci_round": [
+    2.0,
+    3.5
+   ],
+   "ci_pos": [
+    0.5757357842485985,
+    0.740392258579407
+   ],
+   "ci_defect": [
+    0.4166666666666667,
+    0.9166666666666666
+   ]
+  },
+  "ch-private_neutral_cf": {
+   "n": 10,
+   "summary": {
+    "cell_name": "ch-private_neutral_cf",
+    "n": 10,
+    "n_deals": 10,
+    "deal_share": 1.0,
+    "mean_round_closed": 2.3,
+    "median_round_closed": 3.0,
+    "mean_price_pos": 0.7642013309083431,
+    "price_sd": 0.10159448630271534,
+    "reference_pos": 0.7642013309083431,
+    "displacement": 0.0,
+    "defection_rate": 0.6,
+    "mean_principal_shortfall": 2.842170943040401e-15,
+    "n_accidental": 0,
+    "classification": "shirking"
+   },
+   "ci_round": [
+    1.0,
+    3.0
+   ],
+   "ci_pos": [
+    0.7037262381162253,
+    0.8259643523328382
+   ],
+   "ci_defect": [
+    0.3,
+    0.9
+   ]
+  },
+  "ch-private_neutral_full": {
+   "n": 10,
+   "summary": {
+    "cell_name": "ch-private_neutral_full",
+    "n": 10,
+    "n_deals": 10,
+    "deal_share": 1.0,
+    "mean_round_closed": 2.4,
+    "median_round_closed": 2.5,
+    "mean_price_pos": 0.5917341104927274,
+    "price_sd": 0.1842416912804713,
+    "reference_pos": 0.7642013309083431,
+    "displacement": -0.17246722041561569,
+    "defection_rate": 0.4,
+    "mean_principal_shortfall": -1.8169999999999966,
+    "n_accidental": 0,
+    "classification": "indeterminate"
+   },
+   "ci_round": [
+    1.0,
+    3.0
+   ],
+   "ci_pos": [
+    0.47306168081334843,
+    0.7046655444686393
+   ],
+   "ci_defect": [
+    0.1,
+    0.7
+   ]
+  },
+  "ch-private_unregulated": {
+   "n": 10,
+   "summary": {
+    "cell_name": "ch-private_unregulated",
+    "n": 10,
+    "n_deals": 10,
+    "deal_share": 1.0,
+    "mean_round_closed": 3.8,
+    "median_round_closed": 4.0,
+    "mean_price_pos": 0.6659453020220263,
+    "price_sd": 0.16897452504395813,
+    "reference_pos": 0.7642013309083431,
+    "displacement": -0.09825602888631679,
+    "defection_rate": 0.7,
+    "mean_principal_shortfall": -1.7419999999999987,
+    "n_accidental": 0,
+    "classification": "indeterminate"
+   },
+   "ci_round": [
+    3.0,
+    4.5
+   ],
+   "ci_pos": [
+    0.5607463635677838,
+    0.7704157129777791
+   ],
+   "ci_defect": [
+    0.4,
+    1.0
+   ]
+  },
+  "ch-public_neutral": {
+   "n": 12,
+   "summary": {
+    "cell_name": "ch-public_neutral",
+    "n": 12,
+    "n_deals": 12,
+    "deal_share": 1.0,
+    "mean_round_closed": 2.9166666666666665,
+    "median_round_closed": 3.0,
+    "mean_price_pos": 0.7049739810956007,
+    "price_sd": 0.23698614744082455,
+    "reference_pos": 0.7642013309083431,
+    "displacement": -0.05922734981274236,
+    "defection_rate": 0.8333333333333334,
+    "mean_principal_shortfall": -1.5313333333333308,
+    "n_accidental": 0,
+    "classification": "indeterminate"
+   },
+   "ci_round": [
+    3.0,
+    3.0
+   ],
+   "ci_pos": [
+    0.5637037284682355,
+    0.8250646258256186
+   ],
+   "ci_defect": [
+    0.5833333333333334,
+    1.0
+   ]
+  }
+ },
+ "factor_rounds": {
+  "microstructure_effect": -6.0,
+  "ci": [
+   -8,
+   -4.5
+  ]
+ },
+ "factor_pos": {
+  "microstructure_effect": 0.4049270720286477,
+  "ci": [
+   0.3248276677487554,
+   0.48393490630293934
+  ]
+ }
+}

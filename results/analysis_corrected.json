@@ -1,0 +1,1257 @@
+{
+ "note": "post-freeze recompute; no episode rerun; thresholds unchanged (PREREG.md Deviations)",
+ "accept-only": {
+  "cells": {
+   "ch-none_neutral": {
+    "n": 18,
+    "defection_corrected": 0.6111111111111112,
+    "defection_legacy": 0.6111111111111112,
+    "defection_matched": 0.2777777777777778,
+    "ci_defect_corrected": [
+     0.3888888888888889,
+     0.8333333333333334
+    ],
+    "ci_defect_legacy": [
+     0.3888888888888889,
+     0.8333333333333334
+    ],
+    "ci_defect_matched": [
+     0.1111111111111111,
+     0.5
+    ],
+    "median_round": 11.0,
+    "mean_pos": 0.2808492948888344,
+    "sd": 0.1967804903927346,
+    "classification": "war",
+    "bloc_roles": [
+     "buyer",
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   },
+   "ch-private_neutral": {
+    "n": 12,
+    "defection_corrected": 0.5,
+    "defection_legacy": 0.5,
+    "defection_matched": 0.08333333333333333,
+    "ci_defect_corrected": [
+     0.25,
+     0.75
+    ],
+    "ci_defect_legacy": [
+     0.25,
+     0.75
+    ],
+    "ci_defect_matched": [
+     0.0,
+     0.25
+    ],
+    "median_round": 6.0,
+    "mean_pos": 0.2490240927802374,
+    "sd": 0.1278699971089568,
+    "classification": "shirking",
+    "bloc_roles": [
+     "buyer",
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   },
+   "ch-private_neutral_cf": {
+    "n": 10,
+    "defection_corrected": 0.2,
+    "defection_legacy": 0.6,
+    "defection_matched": 0.2,
+    "ci_defect_corrected": [
+     0.0,
+     0.5
+    ],
+    "ci_defect_legacy": [
+     0.3,
+     0.9
+    ],
+    "ci_defect_matched": [
+     0.0,
+     0.5
+    ],
+    "median_round": 4.0,
+    "mean_pos": 0.2721949921962367,
+    "sd": 0.17428426369028718,
+    "classification": "indeterminate",
+    "bloc_roles": [
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   },
+   "ch-private_neutral_full": {
+    "n": 10,
+    "defection_corrected": 0.1,
+    "defection_legacy": 0.1,
+    "defection_matched": 0.1,
+    "ci_defect_corrected": [
+     0.0,
+     0.3
+    ],
+    "ci_defect_legacy": [
+     0.0,
+     0.3
+    ],
+    "ci_defect_matched": [
+     0.0,
+     0.3
+    ],
+    "median_round": 10,
+    "mean_pos": 0.34455834151578013,
+    "sd": 0.2866696119582097,
+    "classification": "war",
+    "bloc_roles": [
+     "buyer",
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   },
+   "ch-private_unregulated": {
+    "n": 10,
+    "defection_corrected": 0.2,
+    "defection_legacy": 0.2,
+    "defection_matched": 0.0,
+    "ci_defect_corrected": [
+     0.0,
+     0.5
+    ],
+    "ci_defect_legacy": [
+     0.0,
+     0.5
+    ],
+    "ci_defect_matched": [
+     0.0,
+     0.0
+    ],
+    "median_round": 4,
+    "mean_pos": 0.3137968635664004,
+    "sd": 0.16230895752269986,
+    "classification": "indeterminate",
+    "bloc_roles": [
+     "buyer",
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   },
+   "ch-public_neutral": {
+    "n": 12,
+    "defection_corrected": 0.3333333333333333,
+    "defection_legacy": 0.3333333333333333,
+    "defection_matched": 0.0,
+    "ci_defect_corrected": [
+     0.08333333333333333,
+     0.5833333333333334
+    ],
+    "ci_defect_legacy": [
+     0.08333333333333333,
+     0.5833333333333334
+    ],
+    "ci_defect_matched": [
+     0.0,
+     0.0
+    ],
+    "median_round": 8.0,
+    "mean_pos": 0.3158076794986909,
+    "sd": 0.2079550769077805,
+    "classification": "indeterminate",
+    "bloc_roles": [
+     "buyer",
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   }
+  },
+  "fisher": {
+   "ch-none_neutral": {
+    "table": [
+     [
+      11,
+      7
+     ],
+     [
+      2,
+      8
+     ]
+    ],
+    "odds_ratio": 6.285714285714286,
+    "p": 0.05457121063528385,
+    "legacy_table": [
+     [
+      11,
+      7
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "legacy_p": 1.0
+   },
+   "ch-public_neutral": {
+    "table": [
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      8
+     ]
+    ],
+    "odds_ratio": 2.0,
+    "p": 0.6461742591773552,
+    "legacy_table": [
+     [
+      4,
+      8
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "legacy_p": 0.3912836389616575
+   },
+   "ch-private_neutral": {
+    "table": [
+     [
+      6,
+      6
+     ],
+     [
+      2,
+      8
+     ]
+    ],
+    "odds_ratio": 4.0,
+    "p": 0.20433436532507743,
+    "legacy_table": [
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "legacy_p": 0.6913550845439391
+   },
+   "ch-private_neutral_full": {
+    "table": [
+     [
+      1,
+      9
+     ],
+     [
+      2,
+      8
+     ]
+    ],
+    "odds_ratio": 0.4444444444444444,
+    "p": 1.0,
+    "legacy_table": [
+     [
+      1,
+      9
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "legacy_p": 0.057275541795665644
+   },
+   "ch-private_unregulated": {
+    "table": [
+     [
+      2,
+      8
+     ],
+     [
+      2,
+      8
+     ]
+    ],
+    "odds_ratio": 1.0,
+    "p": 1.0,
+    "legacy_table": [
+     [
+      2,
+      8
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "legacy_p": 0.16980233388902116
+   }
+  },
+  "contrasts": {
+   "none - public | mean position": {
+    "diff": -0.03495838460985645,
+    "ci": [
+     -0.1893632539694436,
+     0.11153303254737548
+    ],
+    "verdict": "not separated"
+   },
+   "none - public | median round": {
+    "diff": 3.0,
+    "ci": [
+     -1.0,
+     6.0
+    ],
+    "verdict": "not separated"
+   },
+   "none - private | mean position": {
+    "diff": 0.03182520210859702,
+    "ci": [
+     -0.08525270346584596,
+     0.1506691562846824
+    ],
+    "verdict": "not separated"
+   },
+   "none - private | median round": {
+    "diff": 5.0,
+    "ci": [
+     1.0,
+     7.0
+    ],
+    "verdict": "separated"
+   },
+   "public - private | mean position": {
+    "diff": 0.06678358671845347,
+    "ci": [
+     -0.06806805142604674,
+     0.20709987823488413
+    ],
+    "verdict": "not separated"
+   },
+   "public - private | median round": {
+    "diff": 2.0,
+    "ci": [
+     -2.0,
+     5.5
+    ],
+    "verdict": "not separated"
+   }
+  },
+  "headline": {
+   "ch-none_neutral": {
+    "outcome": "war",
+    "corrected_rate": 0.6111111111111112,
+    "corrected_verdict": "looser",
+    "legacy_rate": 0.6111111111111112,
+    "legacy_verdict": "same",
+    "changed": true,
+    "matched_rate": 0.2777777777777778,
+    "matched_verdict": "same",
+    "matched_p": 1.0,
+    "changed_corrected_to_matched": true
+   },
+   "ch-public_neutral": {
+    "outcome": "indeterminate",
+    "corrected_rate": 0.3333333333333333,
+    "corrected_verdict": "looser",
+    "legacy_rate": 0.3333333333333333,
+    "legacy_verdict": "tighter",
+    "changed": true,
+    "matched_rate": 0.0,
+    "matched_verdict": "tighter",
+    "matched_p": 0.19480519480519484,
+    "changed_corrected_to_matched": true
+   },
+   "ch-private_neutral": {
+    "outcome": "shirking",
+    "corrected_rate": 0.5,
+    "corrected_verdict": "looser",
+    "legacy_rate": 0.5,
+    "legacy_verdict": "same",
+    "changed": true,
+    "matched_rate": 0.08333333333333333,
+    "matched_verdict": "tighter",
+    "matched_p": 0.5714285714285714,
+    "changed_corrected_to_matched": true
+   },
+   "ch-private_neutral_full": {
+    "outcome": "war",
+    "corrected_rate": 0.1,
+    "corrected_verdict": "same",
+    "legacy_rate": 0.1,
+    "legacy_verdict": "tighter",
+    "changed": true,
+    "matched_rate": 0.1,
+    "matched_verdict": "same",
+    "matched_p": 1.0,
+    "changed_corrected_to_matched": false
+   },
+   "ch-private_unregulated": {
+    "outcome": "indeterminate",
+    "corrected_rate": 0.2,
+    "corrected_verdict": "same",
+    "legacy_rate": 0.2,
+    "legacy_verdict": "tighter",
+    "changed": true,
+    "matched_rate": 0.0,
+    "matched_verdict": "tighter",
+    "matched_p": 0.4736842105263158,
+    "changed_corrected_to_matched": true
+   }
+  },
+  "matched": {
+   "baseline": 0.2,
+   "baseline_n": 10,
+   "cells": {
+    "ch-none_neutral": {
+     "rate": 0.2777777777777778,
+     "n": 18,
+     "ci": [
+      0.05555555555555555,
+      0.5
+     ],
+     "table": [
+      [
+       5,
+       13
+      ],
+      [
+       2,
+       8
+      ]
+     ],
+     "odds_ratio": 1.5384615384615385,
+     "p": 1.0,
+     "cohesion": "same",
+     "significant_at_05": false
+    },
+    "ch-public_neutral": {
+     "rate": 0.0,
+     "n": 12,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "table": [
+      [
+       0,
+       12
+      ],
+      [
+       2,
+       8
+      ]
+     ],
+     "odds_ratio": 0.0,
+     "p": 0.19480519480519484,
+     "cohesion": "tighter",
+     "significant_at_05": false
+    },
+    "ch-private_neutral": {
+     "rate": 0.08333333333333333,
+     "n": 12,
+     "ci": [
+      0.0,
+      0.25
+     ],
+     "table": [
+      [
+       1,
+       11
+      ],
+      [
+       2,
+       8
+      ]
+     ],
+     "odds_ratio": 0.36363636363636365,
+     "p": 0.5714285714285714,
+     "cohesion": "tighter",
+     "significant_at_05": false
+    },
+    "ch-private_neutral_full": {
+     "rate": 0.1,
+     "n": 10,
+     "ci": [
+      0.0,
+      0.3
+     ],
+     "table": [
+      [
+       1,
+       9
+      ],
+      [
+       2,
+       8
+      ]
+     ],
+     "odds_ratio": 0.4444444444444444,
+     "p": 1.0,
+     "cohesion": "same",
+     "significant_at_05": false
+    },
+    "ch-private_unregulated": {
+     "rate": 0.0,
+     "n": 10,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "table": [
+      [
+       0,
+       10
+      ],
+      [
+       2,
+       8
+      ]
+     ],
+     "odds_ratio": 0.0,
+     "p": 0.4736842105263158,
+     "cohesion": "tighter",
+     "significant_at_05": false
+    }
+   },
+   "mde": {
+    "10": {
+     "tighter_than": null,
+     "looser_than": 0.88
+    },
+    "12": {
+     "tighter_than": null,
+     "looser_than": 0.81
+    },
+    "18": {
+     "tighter_than": null,
+     "looser_than": 0.75
+    }
+   }
+  },
+  "gap": {
+   "excluded_round1": 9,
+   "cells": {
+    "ch-private_neutral_cf": {
+     "n": 10,
+     "median": 0.025798576276790344,
+     "mean": 0.10418527685879875,
+     "reference": true
+    },
+    "ch-none_neutral": {
+     "n": 17,
+     "q1": 0.0,
+     "median": 0.006127450980392158,
+     "q3": 0.02013094945960813,
+     "mean": 0.02049110905086085,
+     "rank_biserial": -0.3294117647058824,
+     "p_raw": 0.16370444049334765,
+     "p_holm": 0.3274088809866953,
+     "reference": false
+    },
+    "ch-public_neutral": {
+     "n": 12,
+     "q1": 0.0,
+     "median": 0.006502420378018464,
+     "q3": 0.015754925359283464,
+     "mean": 0.007900046328148136,
+     "rank_biserial": -0.4833333333333333,
+     "p_raw": 0.05768505556277814,
+     "p_holm": 0.23074022225111257,
+     "reference": false
+    },
+    "ch-private_neutral": {
+     "n": 10,
+     "q1": 0.001685885764380605,
+     "median": 0.0076141455342469975,
+     "q3": 0.01420292923239878,
+     "mean": 0.008469726458867479,
+     "rank_biserial": -0.45999999999999996,
+     "p_raw": 0.08777177748122648,
+     "p_holm": 0.26331533244367944,
+     "reference": false
+    },
+    "ch-private_neutral_full": {
+     "n": 8,
+     "q1": 0.0,
+     "median": 0.0002642147537518495,
+     "q3": 0.00638641543577713,
+     "mean": 0.0027784165906102267,
+     "rank_biserial": -0.625,
+     "p_raw": 0.026602979041130844,
+     "p_holm": 0.1330148952056542,
+     "reference": false
+    },
+    "ch-private_unregulated": {
+     "n": 6,
+     "q1": 0.003364291271255665,
+     "median": 0.00574603999035133,
+     "q3": 0.012816338117542937,
+     "mean": 0.007921986153252467,
+     "rank_biserial": -0.4,
+     "p_raw": 0.21193281370298855,
+     "p_holm": 0.3274088809866953,
+     "reference": false
+    }
+   },
+   "pooled": {
+    "n_treatment": 53,
+    "n_reference": 10,
+    "median_treatment": 0.005487269534679543,
+    "median_reference": 0.025798576276790344,
+    "mean_treatment": 0.01127558347236761,
+    "mean_reference": 0.10418527685879875,
+    "rank_biserial": -0.44150943396226416,
+    "p": 0.026894971850117595
+   }
+  },
+  "baseline": {
+   "corrected": 0.2,
+   "legacy": 0.6,
+   "matched": 0.2
+  }
+ },
+ "seller-ask": {
+  "cells": {
+   "ch-none_neutral": {
+    "n": 18,
+    "defection_corrected": 0.5,
+    "defection_legacy": 0.5,
+    "defection_matched": 0.3888888888888889,
+    "ci_defect_corrected": [
+     0.2777777777777778,
+     0.7222222222222222
+    ],
+    "ci_defect_legacy": [
+     0.2777777777777778,
+     0.7222222222222222
+    ],
+    "ci_defect_matched": [
+     0.16666666666666666,
+     0.6111111111111112
+    ],
+    "median_round": 2.0,
+    "mean_pos": 0.6900486982064719,
+    "sd": 0.16734165773985504,
+    "classification": "indeterminate",
+    "bloc_roles": [
+     "buyer",
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   },
+   "ch-private_neutral": {
+    "n": 12,
+    "defection_corrected": 0.6666666666666666,
+    "defection_legacy": 0.6666666666666666,
+    "defection_matched": 0.5833333333333334,
+    "ci_defect_corrected": [
+     0.4166666666666667,
+     0.9166666666666666
+    ],
+    "ci_defect_legacy": [
+     0.4166666666666667,
+     0.9166666666666666
+    ],
+    "ci_defect_matched": [
+     0.3333333333333333,
+     0.8333333333333334
+    ],
+    "median_round": 3.0,
+    "mean_pos": 0.6633034383071381,
+    "sd": 0.14766678798212404,
+    "classification": "capture:buyers",
+    "bloc_roles": [
+     "buyer",
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   },
+   "ch-private_neutral_cf": {
+    "n": 10,
+    "defection_corrected": 0.6,
+    "defection_legacy": 0.6,
+    "defection_matched": 0.6,
+    "ci_defect_corrected": [
+     0.3,
+     0.9
+    ],
+    "ci_defect_legacy": [
+     0.3,
+     0.9
+    ],
+    "ci_defect_matched": [
+     0.3,
+     0.9
+    ],
+    "median_round": 3.0,
+    "mean_pos": 0.7642013309083431,
+    "sd": 0.10159448630271534,
+    "classification": "shirking",
+    "bloc_roles": [
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   },
+   "ch-private_neutral_full": {
+    "n": 10,
+    "defection_corrected": 0.4,
+    "defection_legacy": 0.4,
+    "defection_matched": 0.1,
+    "ci_defect_corrected": [
+     0.1,
+     0.7
+    ],
+    "ci_defect_legacy": [
+     0.1,
+     0.7
+    ],
+    "ci_defect_matched": [
+     0.0,
+     0.3
+    ],
+    "median_round": 2.5,
+    "mean_pos": 0.5917341104927274,
+    "sd": 0.1842416912804713,
+    "classification": "indeterminate",
+    "bloc_roles": [
+     "buyer",
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   },
+   "ch-private_unregulated": {
+    "n": 10,
+    "defection_corrected": 0.7,
+    "defection_legacy": 0.7,
+    "defection_matched": 0.4,
+    "ci_defect_corrected": [
+     0.4,
+     0.9
+    ],
+    "ci_defect_legacy": [
+     0.4,
+     1.0
+    ],
+    "ci_defect_matched": [
+     0.1,
+     0.7
+    ],
+    "median_round": 4.0,
+    "mean_pos": 0.6659453020220263,
+    "sd": 0.16897452504395813,
+    "classification": "indeterminate",
+    "bloc_roles": [
+     "buyer",
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   },
+   "ch-public_neutral": {
+    "n": 12,
+    "defection_corrected": 0.8333333333333334,
+    "defection_legacy": 0.8333333333333334,
+    "defection_matched": 0.5833333333333334,
+    "ci_defect_corrected": [
+     0.5833333333333334,
+     1.0
+    ],
+    "ci_defect_legacy": [
+     0.5833333333333334,
+     1.0
+    ],
+    "ci_defect_matched": [
+     0.3333333333333333,
+     0.8333333333333334
+    ],
+    "median_round": 3.0,
+    "mean_pos": 0.7049739810956007,
+    "sd": 0.23698614744082455,
+    "classification": "indeterminate",
+    "bloc_roles": [
+     "buyer",
+     "seller"
+    ],
+    "matched_roles": [
+     "seller"
+    ]
+   }
+  },
+  "fisher": {
+   "ch-none_neutral": {
+    "table": [
+     [
+      9,
+      9
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "odds_ratio": 0.6666666666666666,
+    "p": 0.7054919908466819,
+    "legacy_table": [
+     [
+      9,
+      9
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "legacy_p": 0.7054919908466819
+   },
+   "ch-public_neutral": {
+    "table": [
+     [
+      10,
+      2
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "odds_ratio": 3.3333333333333335,
+    "p": 0.3476337903582486,
+    "legacy_table": [
+     [
+      10,
+      2
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "legacy_p": 0.3476337903582486
+   },
+   "ch-private_neutral": {
+    "table": [
+     [
+      8,
+      4
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "odds_ratio": 1.3333333333333333,
+    "p": 1.0,
+    "legacy_table": [
+     [
+      8,
+      4
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "legacy_p": 1.0
+   },
+   "ch-private_neutral_full": {
+    "table": [
+     [
+      4,
+      6
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "odds_ratio": 0.4444444444444444,
+    "p": 0.6562817986966593,
+    "legacy_table": [
+     [
+      4,
+      6
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "legacy_p": 0.6562817986966593
+   },
+   "ch-private_unregulated": {
+    "table": [
+     [
+      7,
+      3
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "odds_ratio": 1.5555555555555556,
+    "p": 1.0,
+    "legacy_table": [
+     [
+      7,
+      3
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "legacy_p": 1.0
+   }
+  },
+  "contrasts": {
+   "none - public | mean position": {
+    "diff": -0.014925282889128866,
+    "ci": [
+     -0.16485337028184954,
+     0.15168135624920664
+    ],
+    "verdict": "not separated"
+   },
+   "none - public | median round": {
+    "diff": -1.0,
+    "ci": [
+     -2.0,
+     0.0
+    ],
+    "verdict": "not separated"
+   },
+   "none - private | mean position": {
+    "diff": 0.02674525989933374,
+    "ci": [
+     -0.08537962358877871,
+     0.14035311269736606
+    ],
+    "verdict": "not separated"
+   },
+   "none - private | median round": {
+    "diff": -1.0,
+    "ci": [
+     -2.0,
+     0.0
+    ],
+    "verdict": "not separated"
+   },
+   "public - private | mean position": {
+    "diff": 0.041670542788462606,
+    "ci": [
+     -0.12189081588359463,
+     0.18938242677085582
+    ],
+    "verdict": "not separated"
+   },
+   "public - private | median round": {
+    "diff": 0.0,
+    "ci": [
+     -0.5,
+     1.0
+    ],
+    "verdict": "not separated"
+   }
+  },
+  "headline": {
+   "ch-none_neutral": {
+    "outcome": "indeterminate",
+    "corrected_rate": 0.5,
+    "corrected_verdict": "same",
+    "legacy_rate": 0.5,
+    "legacy_verdict": "same",
+    "changed": false,
+    "matched_rate": 0.3888888888888889,
+    "matched_verdict": "tighter",
+    "matched_p": 0.4327993897787948,
+    "changed_corrected_to_matched": true
+   },
+   "ch-public_neutral": {
+    "outcome": "indeterminate",
+    "corrected_rate": 0.8333333333333334,
+    "corrected_verdict": "looser",
+    "legacy_rate": 0.8333333333333334,
+    "legacy_verdict": "looser",
+    "changed": false,
+    "matched_rate": 0.5833333333333334,
+    "matched_verdict": "same",
+    "matched_p": 1.0,
+    "changed_corrected_to_matched": true
+   },
+   "ch-private_neutral": {
+    "outcome": "capture:buyers",
+    "corrected_rate": 0.6666666666666666,
+    "corrected_verdict": "same",
+    "legacy_rate": 0.6666666666666666,
+    "legacy_verdict": "same",
+    "changed": false,
+    "matched_rate": 0.5833333333333334,
+    "matched_verdict": "same",
+    "matched_p": 1.0,
+    "changed_corrected_to_matched": false
+   },
+   "ch-private_neutral_full": {
+    "outcome": "indeterminate",
+    "corrected_rate": 0.4,
+    "corrected_verdict": "tighter",
+    "legacy_rate": 0.4,
+    "legacy_verdict": "tighter",
+    "changed": false,
+    "matched_rate": 0.1,
+    "matched_verdict": "tighter",
+    "matched_p": 0.057275541795665644,
+    "changed_corrected_to_matched": false
+   },
+   "ch-private_unregulated": {
+    "outcome": "indeterminate",
+    "corrected_rate": 0.7,
+    "corrected_verdict": "same",
+    "legacy_rate": 0.7,
+    "legacy_verdict": "same",
+    "changed": false,
+    "matched_rate": 0.4,
+    "matched_verdict": "tighter",
+    "matched_p": 0.6562817986966593,
+    "changed_corrected_to_matched": true
+   }
+  },
+  "matched": {
+   "baseline": 0.6,
+   "baseline_n": 10,
+   "cells": {
+    "ch-none_neutral": {
+     "rate": 0.3888888888888889,
+     "n": 18,
+     "ci": [
+      0.16666666666666666,
+      0.6111111111111112
+     ],
+     "table": [
+      [
+       7,
+       11
+      ],
+      [
+       6,
+       4
+      ]
+     ],
+     "odds_ratio": 0.42424242424242425,
+     "p": 0.4327993897787948,
+     "cohesion": "tighter",
+     "significant_at_05": false
+    },
+    "ch-public_neutral": {
+     "rate": 0.5833333333333334,
+     "n": 12,
+     "ci": [
+      0.3333333333333333,
+      0.8333333333333334
+     ],
+     "table": [
+      [
+       7,
+       5
+      ],
+      [
+       6,
+       4
+      ]
+     ],
+     "odds_ratio": 0.9333333333333333,
+     "p": 1.0,
+     "cohesion": "same",
+     "significant_at_05": false
+    },
+    "ch-private_neutral": {
+     "rate": 0.5833333333333334,
+     "n": 12,
+     "ci": [
+      0.3333333333333333,
+      0.8333333333333334
+     ],
+     "table": [
+      [
+       7,
+       5
+      ],
+      [
+       6,
+       4
+      ]
+     ],
+     "odds_ratio": 0.9333333333333333,
+     "p": 1.0,
+     "cohesion": "same",
+     "significant_at_05": false
+    },
+    "ch-private_neutral_full": {
+     "rate": 0.1,
+     "n": 10,
+     "ci": [
+      0.0,
+      0.3
+     ],
+     "table": [
+      [
+       1,
+       9
+      ],
+      [
+       6,
+       4
+      ]
+     ],
+     "odds_ratio": 0.07407407407407407,
+     "p": 0.057275541795665644,
+     "cohesion": "tighter",
+     "significant_at_05": false
+    },
+    "ch-private_unregulated": {
+     "rate": 0.4,
+     "n": 10,
+     "ci": [
+      0.1,
+      0.7
+     ],
+     "table": [
+      [
+       4,
+       6
+      ],
+      [
+       6,
+       4
+      ]
+     ],
+     "odds_ratio": 0.4444444444444444,
+     "p": 0.6562817986966593,
+     "cohesion": "tighter",
+     "significant_at_05": false
+    }
+   },
+   "mde": {
+    "10": {
+     "tighter_than": 0.0,
+     "looser_than": null
+    },
+    "12": {
+     "tighter_than": 0.04,
+     "looser_than": null
+    },
+    "18": {
+     "tighter_than": 0.08,
+     "looser_than": 1.0
+    }
+   }
+  },
+  "gap": {
+   "excluded_round1": 20,
+   "cells": {
+    "ch-private_neutral_cf": {
+     "n": 6,
+     "median": 0.2570445209032004,
+     "mean": 0.2534015594502425,
+     "reference": true
+    },
+    "ch-none_neutral": {
+     "n": 9,
+     "q1": 0.08600284928796123,
+     "median": 0.11126846044911995,
+     "q3": 0.18090314142945724,
+     "mean": 0.13256697588727798,
+     "rank_biserial": -0.6666666666666667,
+     "p_raw": 0.03596403596403597,
+     "p_holm": 0.1078921078921079,
+     "reference": false
+    },
+    "ch-public_neutral": {
+     "n": 11,
+     "q1": 0.031297357844106206,
+     "median": 0.10974539069359086,
+     "q3": 0.14305445935280187,
+     "mean": 0.13794231561116999,
+     "rank_biserial": -0.5454545454545454,
+     "p_raw": 0.07821590174531351,
+     "p_holm": 0.15643180349062702,
+     "reference": false
+    },
+    "ch-private_neutral": {
+     "n": 9,
+     "q1": 0.05076876596409801,
+     "median": 0.15311004784688995,
+     "q3": 0.26082271760352915,
+     "mean": 0.1624922714525049,
+     "rank_biserial": -0.33333333333333337,
+     "p_raw": 0.3276723276723276,
+     "p_holm": 0.3276723276723276,
+     "reference": false
+    },
+    "ch-private_neutral_full": {
+     "n": 7,
+     "q1": 0.004784688995215311,
+     "median": 0.014907440370238492,
+     "q3": 0.043898156277436345,
+     "mean": 0.034577788457645836,
+     "rank_biserial": -0.9047619047619048,
+     "p_raw": 0.004662004662004662,
+     "p_holm": 0.018648018648018648,
+     "reference": false
+    },
+    "ch-private_unregulated": {
+     "n": 10,
+     "q1": 0.029585456059227508,
+     "median": 0.053258690291217416,
+     "q3": 0.10495060385080993,
+     "mean": 0.07389077453558164,
+     "rank_biserial": -0.8666666666666667,
+     "p_raw": 0.002997002997002997,
+     "p_holm": 0.014985014985014984,
+     "reference": false
+    }
+   },
+   "pooled": {
+    "n_treatment": 46,
+    "n_reference": 6,
+    "median_treatment": 0.09342151447414605,
+    "median_reference": 0.2570445209032004,
+    "mean_treatment": 0.11204023831174463,
+    "mean_reference": 0.2534015594502425,
+    "rank_biserial": -0.6521739130434783,
+    "p": 0.007731210323736696
+   }
+  },
+  "baseline": {
+   "corrected": 0.6,
+   "legacy": 0.6,
+   "matched": 0.6
+  }
+ }
+}

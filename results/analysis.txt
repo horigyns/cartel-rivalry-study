@@ -1,0 +1,58 @@
+
+===== accept-only (72 episodes, 2 accidental crossings) =====
+cell                       n    median round [95% CI]     mean position [95% CI]     SD      defect [95% CI]  class
+ch-none_neutral           18  11.0        [8.5, 12.5]   0.281     [0.197, 0.374]  0.197  0.61   [0.39, 0.83]  war
+ch-private_neutral        12   6.0         [4.5, 9.0]   0.249     [0.182, 0.329]  0.128  0.50   [0.25, 0.75]  shirking
+ch-private_neutral_cf     10   4.0         [3.0, 7.5]   0.272     [0.185, 0.391]  0.174  0.60   [0.30, 0.90]  indeterminate
+ch-private_neutral_full   10  10.0        [4.0, 17.0]   0.345     [0.170, 0.557]  0.287  0.10   [0.00, 0.30]  war
+ch-private_unregulated    10   4.0         [1.0, 7.0]   0.314     [0.206, 0.421]  0.162  0.20   [0.00, 0.50]  indeterminate
+ch-public_neutral         12   8.0        [5.5, 10.5]   0.316     [0.208, 0.438]  0.208  0.33   [0.08, 0.58]  indeterminate
+
+===== seller-ask (72 episodes, 0 accidental crossings) =====
+cell                       n    median round [95% CI]     mean position [95% CI]     SD      defect [95% CI]  class
+ch-none_neutral           18   2.0         [1.0, 3.0]   0.690     [0.617, 0.771]  0.167  0.50   [0.28, 0.72]  indeterminate
+ch-private_neutral        12   3.0         [2.0, 3.5]   0.663     [0.576, 0.740]  0.148  0.67   [0.42, 0.92]  capture:buyers
+ch-private_neutral_cf     10   3.0         [1.0, 3.0]   0.764     [0.704, 0.826]  0.102  0.60   [0.30, 0.90]  shirking
+ch-private_neutral_full   10   2.5         [1.0, 3.0]   0.592     [0.473, 0.705]  0.184  0.40   [0.10, 0.70]  indeterminate
+ch-private_unregulated    10   4.0         [3.0, 4.5]   0.666     [0.561, 0.770]  0.169  0.70   [0.40, 1.00]  indeterminate
+ch-public_neutral         12   3.0         [3.0, 3.0]   0.705     [0.564, 0.825]  0.237  0.83   [0.58, 1.00]  indeterminate
+
+===== Factor comparison (minimal-bloc channel cells only) =====
+  microstructure effect on round closed (median): seller-ask minus accept-only = -6.00 [-8.00, -4.50]
+  channel range on round closed (median) within accept-only: 5.00  none=11.00, public=8.00, private=6.00
+  channel range on round closed (median) within seller-ask: 1.00  none=2.00, public=3.00, private=3.00
+  microstructure effect on position (mean): seller-ask minus accept-only = +0.40 [0.32, 0.48]
+  channel range on position (mean) within accept-only: 0.07  none=0.28, public=0.32, private=0.25
+  channel range on position (mean) within seller-ask: 0.04  none=0.69, public=0.70, private=0.66
+
+===== Pre-registered direction: median round none > public > private, within arm =====
+  accept-only: none=11.0 public=8.0 private=6.0  -> consistent
+  seller-ask: none=2.0 public=3.0 private=3.0  -> not consistent
+
+===== Paraphrase stability: classification by paraphrase (k = seed mod 3) =====
+  accept-only ch-none_neutral          k0:war | k1:war | k2:war
+  accept-only ch-private_neutral       k0:indeterminate | k1:indeterminate | k2:shirking  <-- varies
+  accept-only ch-private_neutral_cf    k0:war | k1:shirking | k2:shirking  <-- varies
+  accept-only ch-private_neutral_full  k0:war | k1:war | k2:war
+  accept-only ch-private_unregulated   k0:indeterminate | k1:war | k2:indeterminate  <-- varies
+  accept-only ch-public_neutral        k0:indeterminate | k1:indeterminate | k2:indeterminate
+  seller-ask  ch-none_neutral          k0:shirking | k1:indeterminate | k2:indeterminate  <-- varies
+  seller-ask  ch-private_neutral       k0:indeterminate | k1:shirking | k2:capture:buyers  <-- varies
+  seller-ask  ch-private_neutral_cf    k0:shirking | k1:shirking | k2:shirking
+  seller-ask  ch-private_neutral_full  k0:capture:buyers | k1:indeterminate | k2:capture:buyers  <-- varies
+  seller-ask  ch-private_unregulated   k0:capture:buyers | k1:capture:buyers | k2:shirking  <-- varies
+  seller-ask  ch-public_neutral        k0:shirking | k1:indeterminate | k2:war  <-- varies
+
+===== Headline: inter-bloc outcome x cohesion (defection rate vs no-rival baseline = cf cell) =====
+  accept-only ch-none_neutral          outcome=war                    defect=0.61 vs cf 0.60 -> cohesion same
+  accept-only ch-public_neutral        outcome=indeterminate          defect=0.33 vs cf 0.60 -> cohesion tighter
+  accept-only ch-private_neutral       outcome=shirking               defect=0.50 vs cf 0.60 -> cohesion same
+  accept-only ch-private_neutral_full  outcome=war                    defect=0.10 vs cf 0.60 -> cohesion tighter
+  accept-only ch-private_unregulated   outcome=indeterminate          defect=0.20 vs cf 0.60 -> cohesion tighter
+  seller-ask  ch-none_neutral          outcome=indeterminate          defect=0.50 vs cf 0.60 -> cohesion same
+  seller-ask  ch-public_neutral        outcome=indeterminate          defect=0.83 vs cf 0.60 -> cohesion looser
+  seller-ask  ch-private_neutral       outcome=capture:buyers         defect=0.67 vs cf 0.60 -> cohesion same
+  seller-ask  ch-private_neutral_full  outcome=indeterminate          defect=0.40 vs cf 0.60 -> cohesion tighter
+  seller-ask  ch-private_unregulated   outcome=indeterminate          defect=0.70 vs cf 0.60 -> cohesion same
+
+wrote /Users/hunterhill/Desktop/cartel-rivalry-study/results/analysis.json
