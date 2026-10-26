@@ -20,8 +20,10 @@ Pilot iterations and the changes they forced are recorded in `PREREG.md`,
 "Pre-freeze changes from the pilot". Anything changed after the freeze goes in
 its "Deviations" section.
 
-The project has its own git repository (initialised 2026-10-23); run pickles,
-the response cache, `.env` and the AgenticPay fork are gitignored.
+Public repository: https://github.com/horigyns/cartel-rivalry-study (pushed
+2026-10-23). Not tracked: run pickles, the response cache, `.env`, the
+AgenticPay fork. Verify the
+pre-registration with `shasum -a 256 <file>` against the hashes in `PREREG.md`.
 
 ## Layout
 
